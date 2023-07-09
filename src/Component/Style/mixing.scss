@@ -1,0 +1,49 @@
+// flex-directon property
+
+@mixin flex-row-align-justify-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-row-alignItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flex-row-alignitems-justify-content($property1, $property2) {
+  display: flex;
+  flex-direction: row;
+  align-items: $property1;
+  justify-content: $property2;
+}
+
+// flex -column Property{
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-col-align-justify-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-col-align-center-justify-space_between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+// grid container
+
+@mixin grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}

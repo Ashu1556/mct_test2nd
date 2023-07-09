@@ -1,0 +1,24 @@
+@import "./mixing.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-Container {
+  height: 200vh;
+  width: 80vw;
+  margin: 8rem;
+  color: black;
+}
+
+.grid-container {
+  @include grid-container;
+  gap: 20px;
+}
+.grid-item {
+  @include flex-col-align-center-justify-space_between;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  height: 50vh;
+}

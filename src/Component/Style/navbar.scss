@@ -1,0 +1,47 @@
+@import "./mixing.scss";
+
+$navbar_container_height: 15vh;
+
+// background color
+
+$black-background: rgb(209, 203, 203);
+
+// text color
+
+$white-text: black;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+.end-list-item {
+  @include flex-row-alignitems-justify-content(center, space-evenly);
+  margin-right: 1rem;
+  width: 12rem;
+}
+
+.navbarContainer {
+  @include flex-row-alignitems-justify-content(center, space-between);
+  height: $navbar_container_height;
+  background-color: $black-background;
+  color: $white-text;
+  width: 100%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.navbarItem {
+  @include flex-row-alignItems;
+  width: 15rem;
+}
+
+.listitem {
+  @include flex-row-alignitems-justify-content(center, space-evenly);
+  width: 100%;
+}
+.listitem2 {
+  @include flex-row-alignItems;
+  width: 100%;
+}

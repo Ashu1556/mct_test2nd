@@ -1,0 +1,33 @@
+@import "./mixing.scss";
+
+$Container_height: 100vh;
+
+$div_container_height: 30vh;
+
+$alignItems: center;
+
+$justifyContent: center;
+
+$login_container_height: 15vh;
+
+$div_container_width: 35rem;
+
+.container {
+  @include flex-col-align-justify-center;
+  height: $Container_height;
+}
+
+.div_container {
+  @include flex-col;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  height: $div_container_height;
+  width: $div_container_width;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.login_container {
+  @include flex-col;
+  height: $login_container_height;
+  justify-content: space-between;
+}
